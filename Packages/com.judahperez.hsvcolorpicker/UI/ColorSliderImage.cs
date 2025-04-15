@@ -15,7 +15,7 @@ namespace HSVPicker
         public Slider.Direction direction;
 
         private RawImage image;
-        private Texture2D initialTexture;
+        private Texture initialTexture;
 
         private RectTransform rectTransform
         {
