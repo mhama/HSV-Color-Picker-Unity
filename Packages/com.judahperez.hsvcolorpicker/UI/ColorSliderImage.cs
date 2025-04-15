@@ -53,7 +53,7 @@ namespace HSVPicker
         private void OnDestroy()
         {
             if (image.texture != null)
-                DestroyImmediate(image.texture);
+                Destroy(image.texture);
         }
 
         private void ColorChanged(Color newColor)
@@ -185,7 +185,7 @@ namespace HSVPicker
             texture.Apply();
 
             if (image.texture != null)
-                DestroyImmediate(image.texture);
+                Destroy(image.texture);
             image.texture = texture;
 
             switch (direction)
